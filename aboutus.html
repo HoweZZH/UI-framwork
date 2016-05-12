@@ -25,8 +25,8 @@
 
 <body  data-spy="scroll" data-target="#myScrollspy" data-offset="200">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
+        <div class="container">  
+            <div class="navbar-header">  
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -161,76 +161,99 @@
             <div class="col-xs-12">  
                 
                 <h2>Corporate Leadership</h2>
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
-                    <a href="#peter" aria-controls="peter"
-                     role="tab" data-toggle="tab">Peter Pan, CEO</a></li>
-                    <li role="presentation"><a href="#danny"
-                     aria-controls="danny" role="tab"
-                     data-toggle="tab">Danny Witherspoon, CFO</a></li>
-                    <li role="presentation"><a href="#agumbe"
-                     aria-controls="agumbe" role="tab"
-                     data-toggle="tab">歌词</a></li>
-                    <li role="presentation"><a href="#alberto"
-                     aria-controls="alberto" role="tab"
-                     data-toggle="tab">囚鸟mv</a></li>
-                </ul> 
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade in active" id="peter">
-                        <h3>囚鸟<small>Chief Epicurious Officer</small></h3>
-                        <p> 囚鸟<small>♪(^∇^*)</small> </p>
+                
+                <div class="panel-group" id="accordion"
+                      role="tablist" aria-multiselectable="true">
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingPeter">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse"
+                                     data-parent="#accordion" href="#peter"
+                                     aria-expanded="true" aria-controls="peter">
+                                    Peter Pan <small>Chief Epicurious Officer</small></a>
+                            </h3>
+                        </div>
+                    <div role="tabpanel" class="panel-collapse collapse in"
+                             id="peter"    aria-labelledby="headingPeter">
+                            <div class="panel-body">
+                                <p> 我是被你囚禁的鸟
+                                    已经忘了天有多高
+                                    如果离开你给我的小小城堡
+                                    不知还有谁能依靠
+                                    我是被你囚禁的鸟
+                                    得到的爱越来越少
+                                    看着你的笑在别人眼中燃烧
+                                    我却要不到一个拥抱
+                                    我像是一个你可有可无的影子
+                                    冷冷的看着你说谎的样子
+                                    这撩乱的城市
+                                    容不下我的痴
+                                    是什么让你这样迷恋
+                                    这样的放肆
+                                    我像是一个你可有可无的影子
+                                    和寂寞交换着悲伤的心事
+                                    对爱无计可施
+                                    这无味的日子
+                                    眼泪是唯一的奢侈</p>
+                            </div> 
+                        </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="danny">
-                        <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
-                        <p> ♪(^∇^*)~\我是被你囚禁的鸟
-                            已经忘了天有多高
-                            如果离开你给我的小小城堡
-                            不知还有谁能依靠
-                            我是被你囚禁的鸟
-                            得到的爱越来越少
-                            看着你的笑在别人眼中燃烧
-                            我却要不到一个拥抱
-                            我像是一个你可有可无的影子
-                            冷冷的看着你说谎的样子
-                            这撩乱的城市
-                            容不下我的痴
-                            是什么让你这样迷恋
-                            这样的放肆
-                            我像是一个你可有可无的影子
-                            和寂寞交换着悲伤的心事
-                            对爱无计可施
-                            这无味的日子
-                            眼泪是唯一的奢侈</p>
-                    </div> 
-                    <div role="tabpanel" class="tab-pane fade" id="agumbe">
-                        <h3>囚鸟mv <small>O(∩_∩)O哈哈~</small></h3>
-                        <p> ♪我像是一个你可有可无的影子
-                            冷冷地看着你说谎的样子
-                            这撩乱的城市
-                            容不下我的痴
-                            是什么让你这样迷恋
-                            这样的放肆
-                            我像是一个你可有可无的影子
-                            和寂寞交换着悲伤的心事
-                            对爱无计可施
-                            这无味的日子
-                            我的眼泪是唯一的奢侈</p>
-                    </div> 
-                    <div role="tabpanel" class="tab-pane fade" id="alberto">
-                        <h3>囚鸟mv <small>彭羚</small></h3>
-                        <p> O(∩_∩)O~~ </p>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-6 col-sm-offset-2">
-                        <h2>16:9 Responsive Aspect Ratio</h2>
-                                    <div class="embed-responsive embed-responsive-4by3">
-                                        <iframe width="640" height="360" src="https://www.youtube.com/embed/QGRj_u-SnrQ" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-                                </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingDanny">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse"
+                                     data-parent="#accordion" href="#danny"
+                                     aria-expanded="false" aria-controls="danny">
+                                    Dhanasekaran Witherspoon <small>Chief Food Officer</small></a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="panel-collapse collapse"
+                             id="danny"    aria-labelledby="headingDanny">
+                            <div class="panel-body">
+                                <p> Second. . . </em></p>
                             </div>
                         </div>
-                    </div> 
+                    </div>
+            
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingAgumbe">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse"
+                                     data-parent="#accordion" href="#agumbe"
+                                     aria-expanded="false" aria-controls="agumbe">
+                                    Agumbe Tang <small>Chief Taste Officer</small></a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="panel-collapse collapse"
+                             id="agumbe"    aria-labelledby="headingAgumbe">
+                            <div class="panel-body">
+                                <p> Third. . . </em></p>
+                            </div>
+                        </div>
+                    </div>
                     
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingAlberto">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse"
+                                     data-parent="#accordion" href="#alberto"
+                                     aria-expanded="false" aria-controls="alberto">
+                                    Alberto Somayya <small>Executive Chef</small></a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="panel-collapse collapse"
+                             id="alberto"    aria-labelledby="headingAlberto">
+                            <div class="panel-body">
+                                <p> It's been a long day without you, my friend
+And I'll tell you all about it when I see you again (I see you again)
+We've come a long way (yeah, we came a long way) from where we began (you know we started)
+Oh, I'll tell you all about it when I see you again (let me tell you)
+When I see you again... </em></p>
+                            </div>
+                        </div>
+                    </div>        
                 </div>
 
             </div>
