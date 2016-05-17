@@ -1,0 +1,25 @@
+{
+  "name": "conFusion",
+  "description": "my website...haha",
+  "main": "index.html",
+  "keywords": [
+    "haha"
+  ],
+  "authors": [
+    "howe"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3"
+  }
+}
+
